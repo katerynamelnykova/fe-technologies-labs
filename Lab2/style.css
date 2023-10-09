@@ -1,0 +1,63 @@
+/* Стилі для створення зображення за допомогою position */
+
+.cross-position {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #cc0100;
+}
+
+.cross-position::before, .cross-position::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+}
+
+.cross-position::before {
+    width: 40px;
+    height: 100px;
+    top: 50px;
+    left: 80px;
+    border-radius: 5px;
+}
+
+.cross-position::after {
+    width: 100px;
+    height: 40px;
+    top: 80px;
+    left: 50px;
+    border-radius: 5px;
+}
+
+/* Стилі для створення зображення за допомогою transform */
+
+.cross-transform {
+    width: 200px;
+    height: 200px;
+    background-color: #cc0100;
+    position: relative;
+}
+
+.cross-transform::before, .cross-transform::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+}
+
+.cross-transform::before {
+    width: 40px;
+    height: 100px;
+    left: 80px;
+    top: 50px;
+    border-radius: 5px;
+    transform: rotate(90deg);
+}
+
+.cross-transform::after {
+    width: 40px;
+    height: 100px;
+    left: 80px;
+    top: 50px;
+    border-radius: 5px;
+    transform: rotate(-180deg);
+}

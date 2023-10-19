@@ -1,0 +1,55 @@
+/* спільні стилі */
+
+.float-block, .flex-block {
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.line2-block, .flex-line2-block {
+    background-color: lavender;
+    overflow: scroll;
+}
+
+.flex-text1-block, .text1-block {
+    background-color: beige;
+    overflow: scroll;
+}
+
+.cat-pic {
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    padding: 3%;
+    margin: 3%;
+}
+
+.text1-block, .img1-block, .flex-img1-block, .flex-text1-block {
+    width: 50%;
+    height: 100%;
+}
+
+.line1-block, .line2-block, .line3-block, .flex-line1-block, .flex-line2-block, .flex-line3-block{
+    width: 100%;
+    height: 33%;
+}
+
+/* FLOAT */
+
+.line1-block, .line2-block, .line3-block, .text1-block, .img1-block {
+    float: left;
+}
+
+/* FLEX */
+
+.flex-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-line1-block {
+    display: flex;
+    flex-direction: row;
+}
